@@ -1,0 +1,14 @@
+/**
+ * @file
+ * Variables.
+ */
+
+// Grid and Breakpoints
+$break-medium:  700px;
+$break-large:   1200px;
+
+$grids: 3;
+$grids: add-grid(8 at   $break-medium);
+$grids: add-grid(10 at $break-large);
+
+$gutters: 1/3;

@@ -3,3 +3,7 @@ global-styling:
   css:
     base:
       css/style.css: {}
+
+  dependencies:
+    - core/jquery
+    - core/modernizr

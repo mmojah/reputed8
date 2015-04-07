@@ -15,6 +15,7 @@ stylesheets-remove:
   - system.theme.css
 
 regions:
+  header: 'Header'
   content: 'Content'
   nav: 'Nav'
   footer: 'Footer'

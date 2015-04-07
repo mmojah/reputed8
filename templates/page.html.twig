@@ -3,3 +3,74 @@
  * @file display a single page.
  */
 #}
+{# {{ kint(_context) }} #}
+<header class="header">
+	<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      
+      {% if page.header %}
+        <div class="topbar">
+          {{ page.header }}
+        </div>
+      {% endif %}
+
+      <div class="navbar-header">
+        <a class="navbar-logo" href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
+          <img alt="{{ 'site logo'|t }}" title="{{ 'Home'|t }}" src="{{ logo }}" />
+        </a>
+        {% if site_name %}
+          {{ site_name }}
+        {% endif %}
+        {% if site_slogan %}
+          <div class="slogan">
+            {{ site_slogan }}
+          </div>
+        {% endif %}
+
+        {% if page.nav %}
+          <div class="main-nav navbar-collapsed collapsed">
+            {{ page.nav }}
+          </div>
+        {% endif %}
+
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="main-content" >
+  
+  {% if messages %}
+    <div id="messages">
+      <div class="contain">
+        {{ messages }}
+      </div>
+    </div>
+  {% endif %}
+  
+  {% if tabs %}
+      <nav class="tabs" role="navigation">
+          {{ tabs }}
+      </nav>
+  
+  {% endif %}
+  
+  {{ page.help }}
+  
+  {% if action_links %}
+      <ul class="action-links">
+          {{ action_links }}
+      </ul>
+  {% endif %} 
+
+  <main class="content" role="main">
+    {% if title %}
+      <h1 class="page-title">
+        {{ title }}
+      </h1>
+    {% endif %}
+    {{ page.content }}
+  </main> 
+</div>
+<footer class="footer">
+  {{ page.footer }}
+</footer>

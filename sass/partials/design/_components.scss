@@ -1,0 +1,127 @@
+/**
+ * @file
+ * Style Imports.
+ */
+ .btn {
+  cursor: pointer;
+ }
+
+.topbar {
+  text-align: right;
+
+  nav, .search-block-form {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  ul.menu {
+    margin: 0;
+  }
+
+  .menu-item {
+    display: inline-block;
+    padding: 0 5px;
+  }
+}
+
+.search-block-form {
+
+  .form-submit {
+    display: none;
+  }
+}
+
+.main-nav  {
+  @include breakpoint($break-medium) {
+    float: right;
+  }
+}
+
+
+section {
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+
+.first-teaser > .view-content {
+
+  @include breakpoint($break-medium) {
+    float: left;
+    width: 33%;
+  }
+}
+
+.section-latest-article {
+  overflow: hidden;
+  
+  img {
+    width: 100%;
+    
+    @include breakpoint($break-medium) {
+      width: 360px;
+    }    
+  }
+
+  .attachment {
+
+    @include breakpoint($break-medium) {
+      float: right;
+      width: 66%;
+
+      img {
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 150px;
+      }
+
+      .teaser-row {
+        display: inline-block;
+        margin-bottom: 25px;
+        padding-left: 170px;
+        position: relative;
+      }
+    }     
+  }
+}
+
+.section-4 {
+  .teaser-title {
+    display: none;
+  }
+
+  .col {
+    text-align: center;
+
+    i {
+      font-size: 50px;
+      padding: 10px;
+    }    
+
+    @include breakpoint($break-medium) {
+      @include box-sizing(border-box);
+      display: inline-block;
+      float: left;
+      margin-bottom: 20px;
+      padding: 0 20px 0 90px;
+      position: relative;
+      text-align: left;
+      width: 50%;
+
+      h2 {
+        @include typecsset-font-size(20px);
+        margin-bottom: 1rem;
+      }
+
+      i {
+        left: 0;
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+}

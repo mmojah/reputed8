@@ -270,9 +270,140 @@ td {
  * @file
  * Style Imports.
  */
+.btn {
+  cursor: pointer;
+}
+
+.topbar {
+  text-align: right;
+}
+.topbar nav, .topbar .search-block-form {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.topbar ul.menu {
+  margin: 0;
+}
+.topbar .menu-item {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.search-block-form .form-submit {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .main-nav {
+    float: right;
+  }
+}
+
+section .container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media (min-width: 700px) {
+  .first-teaser > .view-content {
+    float: left;
+    width: 33%;
+  }
+}
+
+.section-latest-article {
+  overflow: hidden;
+}
+.section-latest-article img {
+  width: 100%;
+}
+@media (min-width: 700px) {
+  .section-latest-article img {
+    width: 360px;
+  }
+}
+@media (min-width: 700px) {
+  .section-latest-article .attachment {
+    float: right;
+    width: 66%;
+  }
+  .section-latest-article .attachment img {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 150px;
+  }
+  .section-latest-article .attachment .teaser-row {
+    display: inline-block;
+    margin-bottom: 25px;
+    padding-left: 170px;
+    position: relative;
+  }
+}
+
+.section-4 .teaser-title {
+  display: none;
+}
+.section-4 .col {
+  text-align: center;
+}
+.section-4 .col i {
+  font-size: 50px;
+  padding: 10px;
+}
+@media (min-width: 700px) {
+  .section-4 .col {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    margin-bottom: 20px;
+    padding: 0 20px 0 90px;
+    position: relative;
+    text-align: left;
+    width: 50%;
+  }
+  .section-4 .col h2 {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  .section-4 .col i {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+}
+
+header {
+  border-bottom: 2px #E7E7E7 solid;
+}
+
+.section-4 .col i {
+  background: #000;
+  color: #FFF;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
 /**
  * @file
  * Style Imports.
  */
+/**
+ * @file
+ */
+/**
+ * @file
+ * Style Imports.
+ */
+body {
+  font-family: "Open Sans",sans-serif;
+  color: #4A4A4A;
+}
 
 /*# sourceMappingURL=style.css.map */

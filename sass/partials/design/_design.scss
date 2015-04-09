@@ -2,3 +2,20 @@
  * @file
  * Style Imports.
  */
+
+ @import 'components';
+
+header {
+  border-bottom: 2px #E7E7E7 solid;
+}
+
+.section-4 {
+  .col {
+    i {
+      background: #000;
+      color: #FFF;
+      
+      @include border-radius(5px);
+    }
+  }
+}

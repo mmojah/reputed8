@@ -38,6 +38,9 @@
   </nav>
 </header>
 <div id="main-content" >
+  {% if page.content.reputed8_breadcrumbs %}
+    {{ page.content.reputed8_breadcrumbs }}
+  {% endif %}
   
   {% if messages %}
     <div id="messages">
@@ -68,7 +71,7 @@
         {{ title }}
       </h1>
     {% endif %}
-    {{ page.content }}
+    {{ page.content | without('reputed8_breadcrumbs') }}
   </main> 
 </div>
 <footer class="footer">

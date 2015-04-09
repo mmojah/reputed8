@@ -4,6 +4,9 @@ global-styling:
     base:
       css/style.css: {}
 
+  js:
+    js/jquery.fs.naver.min.js: {}      
+
   dependencies:
     - core/jquery
     - core/modernizr

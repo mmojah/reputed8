@@ -2,3 +2,13 @@
  * @file
  * Style Imports.
  */
+
+.navbar-header {
+  display: inline-block;
+  width: 100%;
+}
+.navbar-branding {
+  @include breakpoint($break-medium) {
+    float: left;
+  }  
+}

@@ -260,8 +260,56 @@ td {
 
 /**
  * @file
+ * Style for common elements in the site
+ */
+.tabs ul {
+  border-bottom: 1px solid #ddd;
+  display: inline-block;
+}
+.tabs ul > li {
+  float: left;
+  position: relative;
+  display: block;
+  margin-bottom: -1px;
+}
+.tabs ul > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-right: 2px;
+  line-height: 1.42857;
+  border: 1px solid transparent;
+  -moz-border-radius: 3px 3px 0 0;
+  -webkit-border-radius: 3px;
+  border-radius: 3px 3px 0 0;
+}
+.tabs ul > li > a:hover {
+  background-color: #eee;
+  border-color: #eee #eee transparent #ddd;
+}
+.tabs ul > li.active > a, .tabs ul > li.active > a:hover, .tabs ul > li.active > a:focus {
+  color: #555;
+  background-color: #FFF;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+
+/**
+ * @file
  * Style Imports.
  */
+.navbar-header {
+  display: inline-block;
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .navbar-branding {
+    float: left;
+  }
+}
+
 /**
  * @file
  * Style Imports.
@@ -292,12 +340,6 @@ td {
 
 .search-block-form .form-submit {
   display: none;
-}
-
-@media (min-width: 700px) {
-  .main-nav {
-    float: right;
-  }
 }
 
 section .container {
@@ -394,6 +436,41 @@ header {
  * @file
  * Style Imports.
  */
+@media (min-width: 700px) {
+  .main-nav {
+    float: right;
+  }
+}
+
+.main-menu {
+  margin: 0;
+}
+.main-menu a {
+  display: block;
+  padding: 5px 15px;
+}
+@media (min-width: 700px) {
+  .main-menu a {
+    float: left;
+  }
+}
+
+/* Naver plugin style */
+@media (min-width: 700px) {
+  .naver-handle {
+    display: none;
+  }
+}
+
+.naver-wrapper {
+  overflow: hidden;
+}
+@media (min-width: 700px) {
+  .naver-wrapper {
+    overflow: visible;
+  }
+}
+
 /**
  * @file
  */

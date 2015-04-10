@@ -2,3 +2,36 @@
  * @file
  * Style Imports.
  */
+
+.main-nav  {
+  @include breakpoint($break-medium) {
+    float: right;
+  }
+}
+
+.main-menu {
+  margin: 0;
+
+  a {
+    display: block;
+    padding: 5px 15px;
+
+    @include breakpoint($break-medium) {
+      float: left;
+    }    
+  }  
+}
+
+/* Naver plugin style */
+.naver-handle {
+  @include breakpoint($break-medium) {
+    display: none;
+  }
+}
+
+.naver-wrapper {
+  overflow: hidden;
+  @include breakpoint($break-medium) {
+    overflow: visible;
+  } 
+}

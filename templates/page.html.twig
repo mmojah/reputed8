@@ -15,20 +15,22 @@
       {% endif %}
 
       <div class="navbar-header">
-        <a class="navbar-logo" href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
-          <img alt="{{ 'site logo'|t }}" title="{{ 'Home'|t }}" src="{{ logo }}" />
-        </a>
-        {% if site_name %}
-          {{ site_name }}
-        {% endif %}
-        {% if site_slogan %}
-          <div class="slogan">
-            {{ site_slogan }}
-          </div>
-        {% endif %}
+        <div class="navbar-branding">
+          <a class="navbar-logo" href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
+            <img alt="{{ 'site logo'|t }}" title="{{ 'Home'|t }}" src="{{ logo }}" />
+          </a>
+          {% if site_name %}
+            {{ site_name }}
+          {% endif %}
+          {% if site_slogan %}
+            <div class="slogan">
+              {{ site_slogan }}
+            </div>
+          {% endif %}
+        </div>
 
         {% if page.nav %}
-          <div class="main-nav navbar-collapsed collapsed">
+          <div class="main-nav">
             {{ page.nav }}
           </div>
         {% endif %}
@@ -74,6 +76,16 @@
     {{ page.content | without('reputed8_breadcrumbs') }}
   </main> 
 </div>
+{% if page.aside_1 %}
+  <aside class="side-section-1">
+    {{ page.aside_1 }}
+  </aside>
+{% endif %}
+{% if page.aside_2 %}
+  <aside class="side-section-2">
+    {{ page.aside_2 }}
+  </aside>
+{% endif %}
 <footer class="footer">
   {{ page.footer }}
 </footer>

@@ -32,13 +32,6 @@
   }
 }
 
-.main-nav  {
-  @include breakpoint($break-medium) {
-    float: right;
-  }
-}
-
-
 section {
   .container {
     margin: 0 auto;

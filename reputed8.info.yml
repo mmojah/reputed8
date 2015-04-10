@@ -17,5 +17,7 @@ stylesheets-remove:
 regions:
   header: 'Header'
   content: 'Content'
+  aside_1: 'Side Section 1'
+  aside_2: 'Side Section 2'
   nav: 'Nav'
   footer: 'Footer'
